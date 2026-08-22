@@ -35,7 +35,7 @@
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <!-- Swiper (keep ONLY if your homepage uses Swiper) -->
+  <!-- Swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <!-- Page CSS -->
@@ -64,16 +64,11 @@
 
 <body>
     <!-- Navigation Bar -->
-     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="navbar-container">
             <a href="/" class="favicon">
-          <img
-            src="Nzoka-kivuva-favicon.webp"
-            alt="Nzoka Kivuva & Associates Advocates (Kitengela, Kenya) favicon"
-            class="favicon-img"
-          />
-        </a>
+                <img src="Nzoka-kivuva-favicon.webp" alt="Nzoka Kivuva & Associates Advocates" />
+            </a>
             
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <i class="fas fa-bars"></i>
@@ -85,52 +80,47 @@
                 <li><a href="services.html">Services</a></li>
                 <li><a href="team.html">Our Team</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html" >Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-   <section class="hero">
-      <video class="hero-bg-video" autoplay muted loop playsinline>
-        <source
-          src="https://assets.mixkit.co/videos/47602/47602-720.mp4"
-          type="video/mp4"
-        />
-      </video>
+    <section class="hero">
+        <video class="hero-bg-video" autoplay muted loop playsinline>
+            <source src="https://assets.mixkit.co/videos/47602/47602-720.mp4" type="video/mp4" />
+        </video>
 
-      <div class="hero-overlay"></div>
+        <div class="hero-overlay"></div>
 
-      <div class="hero-container">
-        <div class="hero-visual">
-          <!-- Video clip might sit within this container too if you prefer a framed version -->
-          <!-- But currently the video is full-screen background, we’ll just treat it as left visual area -->
+        <div class="hero-container">
+            <div class="hero-text">
+                <p class="super-tag">Nzoka Kivuva & Associates Advocates</p>
+                <h1>Trusted <br /> Legal<br /> Advocates</h1>
+                <p>Professional Counsel. Proven Solutions.</p>
+
+                <div class="hero-btns">
+                    <a href="services.html" class="btn btn-primary">Our Services</a>
+                    <a href="contact.html" class="btn btn-outline">Schedule Consultation</a>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="hero-text">
-          <p class="super-tag">Nzoka Kivuva & Associates Advocates</p>
-
-          <h1>
-            Trusted <br />
-            Legal<br />Advocates
-          </h1>
-
-          <p>Professional Counsel. Proven Solutions.</p>
-          <!-- <p>Innovate ⭐ Design ⭐ Deliver</p>-->
-
-          <div class="hero-btns">
-            <a href="services.html" class="btn btn-primary">Our Services</a>
-            <a href="contact.html" class="btn btn-outline">Schedule Consultation</a>
-          </div>
+    <!-- Trust Strip -->
+    <section class="trust-strip">
+        <div class="trust-content">
+            <span>CLIENT-FOCUSED REPRESENTATION</span>
+            <span>STRATEGIC COUNSEL</span>
+            <span>PROFESSIONAL INTEGRITY</span>
         </div>
-      </div>
     </section>
 
     <!-- Services Section -->
     <section class="section-bg">
         <div class="section-title">
-            <h2>Our Legal Services</h2>
-            <p>Comprehensive legal solutions tailored to meet your unique needs and circumstances.</p>
+            <h2>Our Practice Areas</h2>
+            <p>Focused legal expertise across the matters that affect individuals, families and businesses.</p>
         </div>
         
         <!-- Services Swiper -->
@@ -142,199 +132,272 @@
                             <i class="fas fa-balance-scale"></i>
                         </div>
                         <h3>Civil Litigation</h3>
-                        <p>Representation in civil disputes, contract matters, and commercial litigation with strategic approach to achieve favorable outcomes.</p>
+                        <p>Strategic representation in civil and commercial disputes to achieve favorable outcomes.</p>
                     </div>
                     <div class="swiper-slide service-slide">
                         <div class="service-icon">
                             <i class="fas fa-home"></i>
                         </div>
-                        <h3>Conveyancing & Property Law</h3>
-                        <p>Expert handling of property transactions, leases, title transfers, and real estate disputes with meticulous attention to detail.</p>
+                        <h3>Property & Conveyancing</h3>
+                        <p>Guidance through property transactions, leases, title transfers, and disputes.</p>
                     </div>
                     <div class="swiper-slide service-slide">
                         <div class="service-icon">
                             <i class="fas fa-users"></i>
                         </div>
                         <h3>Family & Succession Law</h3>
-                        <p>Compassionate guidance through divorce, child custody, adoption, and estate planning matters with sensitivity and expertise.</p>
+                        <p>Compassionate guidance through divorce, child custody, adoption, and estate planning.</p>
                     </div>
                     <div class="swiper-slide service-slide">
                         <div class="service-icon">
                             <i class="fas fa-gavel"></i>
                         </div>
                         <h3>Criminal Defense</h3>
-                        <p>Aggressive defense representation protecting your rights and ensuring fair treatment within the criminal justice system.</p>
+                        <p>Aggressive defense representation protecting your rights within the criminal justice system.</p>
                     </div>
                     <div class="swiper-slide service-slide">
                         <div class="service-icon">
                             <i class="fas fa-file-contract"></i>
                         </div>
                         <h3>Legal Consultancy & Advisory</h3>
-                        <p>Strategic legal advice for businesses and individuals, contract drafting, and compliance guidance to prevent future disputes.</p>
+                        <p>Strategic legal advice for businesses and individuals, contract drafting, and compliance.</p>
                     </div>
                     <div class="swiper-slide service-slide">
                         <div class="service-icon">
                             <i class="fas fa-handshake"></i>
                         </div>
                         <h3>Alternative Dispute Resolution</h3>
-                        <p>Mediation and arbitration services to resolve conflicts efficiently outside the courtroom, saving time and resources.</p>
+                        <p>Mediation and arbitration services to resolve conflicts efficiently outside the courtroom.</p>
                     </div>
                 </div>
-                <!-- Pagination -->
                 <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-section">
+        <div class="section-title">
+            <h2>Why Clients Choose Us</h2>
+            <p>We build our practice on principles of trust, clarity, and unwavering commitment.</p>
+        </div>
+        <div class="why-grid">
+            <div class="why-item">
+                <div class="why-number">01</div>
+                <h4>Client-Centred Counsel</h4>
+                <p>We take the time to understand the circumstances behind every legal matter and provide advice tailored to the client's needs.</p>
+            </div>
+            <div class="why-item">
+                <div class="why-number">02</div>
+                <h4>Clear Legal Guidance</h4>
+                <p>We simplify complex legal issues so our clients can understand their options and make informed decisions.</p>
+            </div>
+            <div class="why-item">
+                <div class="why-number">03</div>
+                <h4>Strategic Representation</h4>
+                <p>We approach every matter with preparation, diligence and a clear understanding of the desired outcome.</p>
+            </div>
+            <div class="why-item">
+                <div class="why-number">04</div>
+                <h4>Integrity & Professionalism</h4>
+                <p>We uphold confidentiality, ethical practice and professional responsibility in every client relationship.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- A Note from the Advocate -->
+    <section class="advocate-note">
+        <div class="advocate-content">
+            <div class="advocate-image">
+                <img src="advocate-nzoka.jpg" alt="Advocate Nzoka" loading="lazy">
+            </div>
+            <div class="advocate-text">
+                <p class="eyebrow">A Note from the Lead Advocate</p>
+                <h3>Protecting your future with clarity and integrity.</h3>
+                <p>I believe that a good lawyer doesn't just litigate—they protect futures. Our firm is built on the simple principle that justice should be accessible to all, regardless of status or circumstance. We take the time to understand the real human story behind every legal matter, and we craft our strategy around the outcome you actually need.</p>
+                <p class="signature">Nzoka Kivuva</p>
+                <a href="team.html" class="text-link">Meet the full team <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
 
     <!-- About Preview Section -->
-   <section class="about-section">
-    <!-- Add these decorative lines -->
-    <div class="decorative-line top"></div>
-    <div class="decorative-line bottom"></div>
-    
-    <div class="section-title">
-        <h2>About Our Firm</h2>
-        <p>Founded on principles of justice, integrity, and client-centered representation</p>
-    </div>
-    
-    <div class="about-content">
-        <div class="about-image">
-            <img
-                src="Nzoka-kivuva-favicon.webp"
-                alt="Nzoka Kivuva & Associates Advocates (Kitengela, Kenya) office"
-                loading="lazy"
-            />
-        </div>
-        
-        <div class="about-text">
-            <h3>Nzoka Kivuva & Associates Advocates </h3>
-            <p>Nzoka Kivuva & Associates Advocates is a Kitengela-based law firm dedicated to providing strategic, client-focused legal services. With expertise across personal, family, property and business law, we tailor our legal counsel to the real needs of every individual or organization we serve.</p>
-            <p>Our firm is built on the foundation that justice should be accessible to all, regardless of status or circumstance. We combine legal excellence with compassionate understanding of our clients' situations.</p>
-            <p>With a commitment to integrity, clarity, and justice, we guide our clients through complex legal challenges with honesty and skill, ensuring their rights are protected and their voices heard.</p>
-            <a href="about.html" class="btn btn-primary">
-                <i class="fas fa-book-open"></i> Learn More About Us
-            </a>
-        </div>
-    </div>
-    
-    <!-- Optional: Add stats overlay -->
-   <div class="about-stats">
-  <div class="stat-item">
-    <div class="stat-number" data-target="5" data-suffix="+">0</div>
-    <div class="stat-label">Years Experience</div>
-  </div>
-
-  <div class="stat-item">
-    <div class="stat-number" data-target="500" data-suffix="+">0</div>
-    <div class="stat-label">Cases Handled</div>
-  </div>
-
-  <div class="stat-item">
-    <div class="stat-number" data-target="98" data-suffix="%">0</div>
-    <div class="stat-label">Client Satisfaction</div>
-  </div>
-
-  <div class="stat-item">
-    <div class="stat-number" data-target="1">0</div>
-    <div class="stat-label">Office Locations</div>
-  </div>
-</div>
-
-</section>
-
-    <!-- Testimonials Section -->
-    <section class="section-bg">
+    <section class="about-section">
         <div class="section-title">
-            <h2>Client Testimonials</h2>
-            <p>Hear from clients who have trusted us with their legal matters</p>
+            <h2>About Our Firm</h2>
+            <p>Founded on principles of justice, integrity, and client-centered representation</p>
         </div>
         
-        <!-- Testimonials Swiper -->
-        <div class="swiper-container">
-            <div class="swiper testimonials-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="testimonial-content">
-                            "When I was facing a complex property dispute, Nzoka & Associates provided exceptional representation. They were diligent, knowledgeable, and truly cared about achieving the best outcome for my family. Their professionalism gave me confidence throughout the entire process."
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="author-info">
-                                <h4>James Mwangi</h4>
-                                <p>Property Client</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-content">
-                            "The team handled our company's contractual matters with utmost expertise. They not only resolved our immediate issue but also provided valuable advice to prevent future legal problems. Their responsive communication and attention to detail set them apart."
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="author-info">
-                                <h4>Sarah Okoth</h4>
-                                <p>Business Client</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-content">
-                            "During a difficult family matter, I needed compassionate yet strong legal support. Advocate Nzoka and his team provided exactly that. They listened carefully, explained everything clearly, and fought tirelessly for my rights. I felt supported every step of the way."
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="author-info">
-                                <h4>Grace Wanjiku</h4>
-                                <p>Family Law Client</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-content">
-                            "Facing criminal charges was the most stressful experience of my life. The defense team at Nzoka & Associates was exceptional. They investigated thoroughly, built a strong defense, and ultimately secured a favorable outcome. I'm forever grateful for their dedication."
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="author-info">
-                                <h4>David Omondi</h4>
-                                <p>Criminal Defense Client</p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="Nzoka-kivuva-favicon.webp" alt="Nzoka Kivuva & Associates Advocates office" loading="lazy" />
+            </div>
+            
+            <div class="about-text">
+                <h3>Nzoka Kivuva & Associates Advocates</h3>
+                <p>Nzoka Kivuva & Associates Advocates is a Kitengela-based law firm dedicated to providing strategic, client-focused legal services. With expertise across personal, family, property and business law, we tailor our legal counsel to the real needs of every individual or organization we serve.</p>
+                <p>Our firm is built on the foundation that justice should be accessible to all, regardless of status or circumstance. We combine legal excellence with compassionate understanding of our clients' situations.</p>
+                <p>With a commitment to integrity, clarity, and justice, we guide our clients through complex legal challenges with honesty and skill, ensuring their rights are protected and their voices heard.</p>
+                <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+            </div>
+        </div>
+        
+        <!-- Stats -->
+        <div class="about-stats">
+            <div class="stat-item">
+                <div class="stat-number" data-target="5" data-suffix="+">0</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="6">0</div>
+                <div class="stat-label">Practice Areas</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="100" data-suffix="%">0</div>
+                <div class="stat-label">Commitment</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="1">0</div>
+                <div class="stat-label">Office Locations</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Approach -->
+    <section class="approach-section">
+        <div class="section-title">
+            <h2>Our Approach</h2>
+            <p>Understanding the matter. Defining the strategy. Pursuing the right outcome.</p>
+        </div>
+        <div class="approach-grid">
+            <div class="approach-step">
+                <div class="step-number">01</div>
+                <h4>Consultation</h4>
+                <p>We listen carefully, understand the circumstances and identify the legal issues involved.</p>
+            </div>
+            <div class="approach-step">
+                <div class="step-number">02</div>
+                <h4>Strategy</h4>
+                <p>We assess the available options and develop a clear legal strategy suited to the matter.</p>
+            </div>
+            <div class="approach-step">
+                <div class="step-number">03</div>
+                <h4>Representation</h4>
+                <p>We act diligently on behalf of our clients while keeping them informed throughout the process.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Representative Matters -->
+    <section class="matters-section">
+        <div class="section-title">
+            <h2>Representative Matters</h2>
+            <p>We let our work speak for itself, securing discreet and favorable outcomes across key practice areas.</p>
+        </div>
+        <div class="matters-list">
+            <div class="matter-item">
+                <div class="matter-number">01</div>
+                <div class="matter-content">
+                    <h4>Commercial Litigation</h4>
+                    <p>Successfully represented corporate entities in high-value contract disputes, securing favorable settlements.</p>
                 </div>
-                <!-- Pagination -->
-                <div class="swiper-pagination"></div>
+                <a href="services.html" class="arrow"><i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="matter-item">
+                <div class="matter-number">02</div>
+                <div class="matter-content">
+                    <h4>Complex Conveyancing</h4>
+                    <p>Guided investors through multi-property title transfers, lease agreements, and due diligence.</p>
+                </div>
+                <a href="services.html" class="arrow"><i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="matter-item">
+                <div class="matter-number">03</div>
+                <div class="matter-content">
+                    <h4>Succession Planning</h4>
+                    <p>Discreetly advised high-net-worth families on succession law and estate administration.</p>
+                </div>
+                <a href="services.html" class="arrow"><i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal Insights -->
+    <section class="insights-section section-bg">
+        <div class="section-title">
+            <h2>Legal Insights</h2>
+            <p>Practical perspectives on legal issues that matter.</p>
+        </div>
+        <div class="insights-grid">
+            <div class="insight-card">
+                <p class="insight-category">PROPERTY LAW</p>
+                <h4>Understanding the Conveyancing Process in Kenya</h4>
+                <a href="blog.html" class="text-link">Read Article <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="insight-card">
+                <p class="insight-category">FAMILY LAW</p>
+                <h4>What You Should Know About Succession Planning</h4>
+                <a href="blog.html" class="text-link">Read Article <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="insight-card">
+                <p class="insight-category">BUSINESS LAW</p>
+                <h4>Key Legal Considerations When Entering a Contract</h4>
+                <a href="blog.html" class="text-link">Read Article <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Initial Consultation FAQs -->
+    <section class="faq-section">
+        <div class="section-title">
+            <h2>Initial Consultation FAQs</h2>
+            <p>Answers to common questions before you reach out to our team.</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">How do I book a consultation? <span class="faq-icon">+</span></div>
+                <div class="faq-answer">You can book directly through our contact page, or simply call or WhatsApp us at +254 710 599 653. We will schedule a convenient time for you.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How much do your services typically cost? <span class="faq-icon">+</span></div>
+                <div class="faq-answer">Consultation fees are discussed upfront. For specific matters, we provide clear estimates based on the complexity and scope of the work required, ensuring no hidden surprises.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How long does a property transfer take? <span class="faq-icon">+</span></div>
+                <div class="faq-answer">It depends on the state of the title, the consent process, and government processing times. We guide you step-by-step to keep timelines as short as possible.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Will I be kept updated on my case? <span class="faq-icon">+</span></div>
+                <div class="faq-answer">Absolutely. We believe in complete transparency. You will receive structured updates on the progress of your matter at every stage.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation CTA -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Need Legal Guidance?</h2>
+            <p>Let's discuss your matter. Whether you require legal advice, representation or assistance with a transaction, our team is ready to understand your needs.</p>
+            <div class="cta-btns">
+                <a href="contact.html" class="btn btn-primary">Schedule a Consultation</a>
+                <a href="tel:+254710599653" class="cta-phone">Call +254 710 599 653</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-   <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="footer-about">
-                <div class="footer-logo">
-                     <a href="/" class="footer-favicon">
-              <img
-                src="Nzoka-kivuva-favicon.webp"
-                alt="Nzoka Advocates favicon"
-              />
-            </a>
+                <div class="footer-favicon">
+                    <img src="Nzoka-kivuva-favicon.webp" alt="Nzoka Advocates favicon" />
                 </div>
                 <p>Nzoka Kivuva & Associates Advocates (Kitengela, Kenya) is a trusted legal firm committed to providing compassionate, ethical, and fearless legal representation grounded in professionalism and respect for human dignity.</p>
                 <div class="social-links">
-                    <a href="#" style="color: #aaa; margin-right: 15px; font-size: 1.2rem;"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" style="color: #aaa; margin-right: 15px; font-size: 1.2rem;"><i class="fab fa-twitter"></i></a>
-                    <a href="#" style="color: #aaa; margin-right: 15px; font-size: 1.2rem;"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" style="color: #aaa; font-size: 1.2rem;"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
             
@@ -352,60 +415,44 @@
             
             <div class="footer-contact">
                 <h3>Contact Us</h3>
-                <div class="contact-info">
-                    <div class="contact-items">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                           <h4><strong>Main Office (Kitengela):</strong></h4> 
-                           <a href="https://share.google/IRGGaovzCNE5KSUKh"> Old Namanga Road,<br>
-                            Kitengela, Kenya</a>
-                        </div>
-                    </div>
-                    <div class="contact-items">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4 id="header-fours"><strong>Phone:</strong></h4>
-                           <a href="tel:+254710599653"> +254 710 599 653</a><br>
-                            <a href="tel:+254710599653">+254 710 599 653</a>
-                        </div>
-                    </div>
-                    <div class="contact-items">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4><strong>Email:</strong></h4>
-                            <a href="mailto:info@nzokakivuvaadvocates.co.ke">info@nzokakivuvaadvocates.co.ke</a>
-                        </div>
-                    </div>
+                <div class="contact-items">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="https://share.google/IRGGaovzCNE5KSUKh">Old Namanga Road, Kitengela, Kenya</a>
+                </div>
+                <div class="contact-items">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+254710599653">+254 710 599 653</a>
+                </div>
+                <div class="contact-items">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@nzokakivuvaadvocates.co.ke">info@nzokakivuvaadvocates.co.ke</a>
                 </div>
             </div>
         </div>
         
-         <div class="copyright">
-                <p>&copy; <span id="y"></span> Nzoka Kivuva & Associates Advocates . All rights reserved. | <a href="#" style="color:rgb(47, 255, 158);">Privacy Policy</a> | <a href="#" style="color:rgb(47, 255, 158);">Terms of Service</a></p>
-              <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
-
-          <p style="margin: 0; font-size: 13px; color: #777">
-            Crafted with <span style="color: red">❤</span> by
-            <a
-              href="https://sarahadevelopers.co.ke"
-              target="_blank"
-              rel="noopener"
-              style="color: orange; text-decoration: none; font-weight: 500"
-            >
-              Saraha Developers Ltd.
-            </a>
-          </p>
-            </div>
-      </div>
+        <div class="copyright">
+    <p>&copy; <span id="y"></span> Nzoka Kivuva & Associates Advocates. All rights reserved.</p>
+    <p style="margin: 0; font-size: 13px; color: #777">
+        Designed & Developed by 
+        <a href="https://sarahadevelopers.co.ke" target="_blank" rel="noopener" style="color: orange; text-decoration: none; font-weight: 500">Saraha Developers Ltd.</a>
+    </p>
+</div>
     </footer>
+
     <!-- WhatsApp Float -->
-    <a href="https://wa.me/254710599653?text=Hello%20Advocate%20Nzoka%2C%20I%20am%20reaching%20out%20through%20your%20website.%0A%0AName%3A%20%5BYour%20Name%5D%0APhone%3A%20%5BYour%20Phone%5D%0AMatter%3A%20%5BBrief%20Description%5D%0ALocation%3A%20%5BOptional%5D%0A%0AKindly%20advise%20on%20the%20next%20step%20and%20available%20time%20for%20a%20consultation.%20Thank%20you." class="whatsapp-float" target="_blank">
-      <i class="fab fa-whatsapp"></i>
-    </a>
+   <!-- WhatsApp Float -->
+<a href="https://wa.me/254710599653?text=Hello%20Advocate%20Nzoka%2C%20I%20am%20reaching%20out%20through%20your%20website.%0A%0AName%3A%20%5BYour%20Name%5D%0APhone%3A%20%5BYour%20Phone%5D%0AMatter%3A%20%5BBrief%20Description%5D%0ALocation%3A%20%5BOptional%5D%0A%0AKindly%20advise%20on%20the%20next%20step%20and%20available%20time%20for%20a%20consultation.%20Thank%20you." class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span>Chat with us</span>
+</a>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     
+<script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+    <!-- Main JS -->
     <script src="index.js"></script>
 </body>
 </html>
