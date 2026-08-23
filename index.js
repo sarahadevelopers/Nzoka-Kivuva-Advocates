@@ -21,14 +21,29 @@ window.addEventListener('scroll', () => {
 
 // Swiper
 const servicesSwiper = new Swiper('.services-swiper', {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    pagination: { el: '.swiper-pagination', clickable: true },
-    breakpoints: {
-        640: { slidesPerView: 2 },
-        992: { slidesPerView: 3 },
+    loop: true,
+    speed: 800,
+    grabCursor: true,
+    spaceBetween: 24, /* Adds clean breathing room between cards */
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
     },
-    autoplay: { delay: 5000, disableOnInteraction: false },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1.1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1100: {
+            slidesPerView: 3, /* Perfect premium 3-column layout */
+        }
+    }
 });
 
 // Animated Counters
