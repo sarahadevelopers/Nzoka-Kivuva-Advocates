@@ -15,7 +15,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// Sticky Navbar Background on Scroll (Updated to Black theme)
+// Sticky Navbar Background on Scroll (Black Theme)
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
@@ -27,7 +27,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// FAQ Accordion (Kept the same)
+// FAQ Accordion
 document.querySelectorAll('.faq-question').forEach(question => {
     question.addEventListener('click', () => {
         const item = question.parentElement;
@@ -35,14 +35,13 @@ document.querySelectorAll('.faq-question').forEach(question => {
     });
 });
 
-// Contact Form Submission (FIXED: Removed preventDefault and alert so FormSubmit works)
-// The form now submits directly to your FormSubmit endpoint (Nzokagwadv@gmail.com)
+// Contact Form Submission (FIXED: Allow FormSubmit to process naturally)
+// Do NOT use e.preventDefault(); or alert() here!
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        // Do NOT use e.preventDefault(); This allows the action to process the form!
-        // Optional: You can add a simple loading state here if desired
-        // e.g., document.querySelector('.btn-primary').innerText = 'Sending...';
+    contactForm.addEventListener('submit', function() {
+        // Just let the form submit naturally to FormSubmit
+        // Optional: You could add a loading state here
     });
 }
 
@@ -64,5 +63,5 @@ formControls.forEach(control => {
     });
 });
 
-// Dynamic Year (Safety net if not already in HTML)
+// Dynamic Year (Safety net)
 document.getElementById("y").textContent = new Date().getFullYear();
