@@ -117,7 +117,7 @@ a {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.68);
+    background: rgba(0, 0, 0, 0.612);
     z-index: 1;
 }
 
@@ -1063,4 +1063,41 @@ footer {
     height: 100%;
     object-fit: cover; /* Ensures the image covers the whole hero without stretching */
     display: block;
+}
+
+/* Hero Tagline / Firm Name */
+.super-tag {
+    display: flex;
+    align-items: baseline; /* Aligns both text parts on the same baseline */
+    gap: 8px; /* Tighter gap for a cohesive look */
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
+
+.firm-name {
+    font-family: var(--font-premium); /* Cormorant Garamond */
+    font-size: 1.25rem; /* Noticeably larger, but not huge */
+    font-weight: 600;
+    color: var(--lime);
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.firm-type {
+    font-family: var(--font-primary); /* Jost */
+    font-size: 0.8rem; /* Clearly smaller */
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8); /* Soft, premium white */
+    text-transform: lowercase; /* The requested lowercase */
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+}
+
+/* Mobile & Small Devices: Show Full Image */
+@media (max-width: 768px) {
+    .about-image img {
+        height: auto;         /* Removes the fixed 420px height so the image scales naturally */
+        object-fit: contain;  /* Ensures absolutely nothing is cropped out */
+        max-height: 600px;    /* Optional: Prevents it from becoming too tall on small screens */
+    }
 }
